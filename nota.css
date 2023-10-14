@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    background-image: url("asset/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20vh;
+    position: relative;
+  }
+
+button{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin: 20px 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 231, 124, 0.877);
+    background: rgba(255, 231, 124, 0.2);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button a{
+    border-radius: 50%;
+    position: absolute;
+    padding: 50px 90px;
+    font-family: tilt prism;
+    font-weight: bold;
+    font-size: 5vh;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    cursor: pointer;
+}
+
+span{
+    background: rgba(255, 231, 124, 0.9);
+    height: 0%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+button:hover span{
+    height: 100%;
+}
+
+.utama {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    top: 80%;
+    bottom: -20%;
+    left: 47.3%;
+}
+
+.home {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.home :hover {
+    transform: translateY(-5px);
+}

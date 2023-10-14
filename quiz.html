@@ -1,0 +1,86 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuiz Asas Seni Reka</title>
+    <link rel="stylesheet" href="quiz.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="navigation">
+        <a class="home" href="Mainpage.html"><img src="asset/home.png" class="home"></a>
+        <a class="previous" href="aktiviti.html"><img src="asset/previous.png" class="previous"></a>
+    </div>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Peraturan Semasa Menjawab Kuiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Anda diberi masa <span>15 saat</span> untuk setiap soalan.</div>
+            <div class="info">2. Setelah anda menjawab soalan, jawapan anda tidak dapat diubah.</div>
+            <div class="info">3. Anda tidak dapat memilih mana-mana pilihan jawapan setelah masa tamat.</div>
+            <div class="info">4. Anda tidak dibenarkan keluar dari kuiz sebelum tamat menjawab semua soalan.</div>
+            <div class="info">5. Anda akan diberi markah bagi setiap jawapan yang dijawab dengan betul.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Keluar</button>
+            <button class="restart">Mula</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Kuiz Seni Reka</div>
+            <div class="timer">
+                <div class="time_left_txt">Masa</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Seterusnya</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Tahniah!! Anda Telah Menyempurnakan Kuiz Ini</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Main Semula</button>
+            <button class="quit">Tamat</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

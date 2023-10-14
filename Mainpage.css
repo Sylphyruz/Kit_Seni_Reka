@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("asset/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    display: list-item;
+    position: relative;
+}
+
+.tajuk {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-65%);
+    text-align: center;
+    font-size: 8.8vh;
+    font-family:tilt prism;
+    font-style: initial;
+    font-weight: bolder;
+}
+
+.navigation {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-42%);
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+}
+
+.navigation ul li {
+    width: 100%;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    border-radius: 25px;
+    cursor: pointer;
+    list-style: none;
+    align-items: center;
+    display: list-item;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.815);
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: tilt prism;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+span {
+    background: rgba(255, 231, 124, 0.75);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover span{
+    width: 100%;
+}
+
+.navigation ul li:hover .navigation ul li{
+    border: none;
+}
